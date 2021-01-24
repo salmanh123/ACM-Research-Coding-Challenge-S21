@@ -23,4 +23,22 @@ Genome analysis is the identification of genomic features such as gene expressio
 
 Regardless if you can or cannot answer the question, provide a short explanation of how you got your solution or how you think it can be solved in your README.md file. However, we highly recommend giving the challenge a try, you just might learn something new!
 
-## Answer
+## Installing Libraries and Helpful Software
+Libraries used: biopython - https://biopython.org/
+Mapping software: SnapGene Viewer - https://www.snapgene.com/snapgene-viewer/
+
+How to Install biopython:
+Step 1: If you do not have python already, please install the latest version of python or you can get anaconda which has Jupyter Notebook
+
+Step 2: In your command line type in “pip install biopython” to install the biopython library
+
+Step 3: If you have Jupyter Notebooks open “circular genome parsing.ipynb”; if you want to use the actual python file then it is labeled “parsed-up-tomato.py”
+
+Step 4: Install Genome.gb file and within the python code, copy and paste the directory including Genome.gb on line 3, right after “SeqIO.parse(’’ between the ‘’’ ‘’’ to replace my directory  for seq_record in SeqIO.parse('''C:/Users/salma/Desktop/ACM-Research-Coding-Challenge-S21/Genome.gb''', "genbank"): 
+
+Step 4: Copy the DNA sequence block of text
+
+## Answer 
+In my genomic analysis, I produced images visualizing the circular genomic map of the Tomato Curly Stunt Virus using the organism’s DNA sequence. The first step I took for my solution was to research different technologies that can create a circular genomic map, I first came across biopython which is a library in Python that deals with bioinformatics. I installed biopython and from there parsed and outputted the provided GenBank file. Parsing this file aided in understanding what was contained in the file and how to move on with mapping the contents. The next step I took was looking for how to visualize a circular genome map, I realized that there is better software with better capabilities/tools than Python for this task. I came across a genomic editing and mapping tab called Snap Gene Viewer. I installed this on my device and opened the GenBank file. From here the sequence was laid out. I went to the features tab and enabled it to show all features. Snap Gene displayed the base locations of the proteins and different genes in this Tomato Virus strand. In the file “genome_gene_protein_map.jpg” this is displayed. After, I went back to the Python code and copied the nucleotide sequence. I opened Snap Gene and pasted in the sequence that Python parsed and clicked on the tab to enable features. From here it displayed all the restriction enzymes in this particular strand, which is the “genome_restriction_enzymes.jpg” file. I went to “File” and exported the circular genome map as a .jpg file. The jpg files display my circular genome map with the different proteins, genes, restriction enzymes, and the base locations in the ssDNA sequence. 
+
+Potential Python Solution: This can also be displayed in python by using the reportlab library. From here you would loop through the file contents to look for features, set colors, and then use provided functions to draw the output and output it to a .pdf file. This file would contain a much less detailed and lower quality circular genome. Personally, I believe software that have a focal point on bioinformatics would be best for mapping this circular genome rather than using python as Snap Gene is much more visually pleasing, practical in editing gene sequences, and in researching about what the provided sequence contains. 
