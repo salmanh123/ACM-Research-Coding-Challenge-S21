@@ -43,5 +43,7 @@ In my genomic analysis, I produced images visualizing the circular genomic map o
 
 Potential Python Solution: This can also be displayed in Python by using the reportlab library. From here you would loop through the file contents to look for features, set colors, and then use provided functions to draw the output and output it to a .pdf file. This file would contain a much less detailed and lower quality circular genome. Personally, I believe software that have a focal point on bioinformatics would be best for mapping this circular genome rather than using a python library since Snap Gene is much more visually pleasing, practical in editing gene sequences, and in researching about what your provided sequence contains. 
 
+Note: The arrows with the names "c1" and "v1" are the locations of those proteins and genes.
+
 ![](genome_gene_protein_map.jpg)
 ![](genome_restriction_enzymes.jpg)
